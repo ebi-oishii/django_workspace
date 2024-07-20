@@ -40,7 +40,7 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser, PermissionsMixin):
-
+    
     account_id = models.CharField(
         verbose_name=_("account_id"),
         unique=True,
@@ -95,4 +95,4 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.account_id
-
+    
